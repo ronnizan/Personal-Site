@@ -1,10 +1,10 @@
 body {
-    background: #0f0f0f;
+    /* background: #0f0f0f; */
 }
 
 header {
     position: relative;
-    height: 750px;
+    height: 753px;
     min-height: 500px;
     width: 100%;
     padding-top: 10px;
@@ -14,7 +14,146 @@ header {
     overflow: hidden;
 }
 
-/* vertically center banner section */
+.Iam {
+    /* padding: 2em 5em; */
+    font: normal 40px/50px Montserrat, sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+    .Iam {
+        font: normal 23px/50px Montserrat, sans-serif;
+    }
+}
+
+.Iam b {
+    float: left;
+    overflow: hidden;
+    position: relative;
+    height: 50px;
+    top: 40px;
+}
+
+.Iam .innerIam {
+    display: inline-block;
+    /* color: #e74c3c; */
+    text-align: center;
+    position: relative;
+    white-space: nowrap;
+    top: 0;
+    left: 0;
+    /*animation*/
+    -webkit-animation: move 5s;
+    -moz-animation: move 5s;
+    -ms-animation: move 5s;
+    -o-animation: move 5s;
+    animation: move 5s;
+    /*animation-iteration-count*/
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    /*animation-delay*/
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -ms-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: -50px;
+    }
+    40% {
+        top: -100px;
+    }
+    60% {
+        top: -150px;
+    }
+    80% {
+        top: -200px;
+    }
+}
+
+@-webkit-keyframes move {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: -50px;
+    }
+    40% {
+        top: -100px;
+    }
+    60% {
+        top: -150px;
+    }
+    80% {
+        top: -200px;
+    }
+}
+
+@-moz-keyframes move {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: -50px;
+    }
+    40% {
+        top: -100px;
+    }
+    60% {
+        top: -150px;
+    }
+    80% {
+        top: -200px;
+    }
+}
+
+@-o-keyframes move {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: -50px;
+    }
+    40% {
+        top: -100px;
+    }
+    60% {
+        top: -150px;
+    }
+    80% {
+        top: -200px;
+    }
+}
+
+@keyframes move {
+    0% {
+        top: 0px;
+    }
+    20% {
+        top: -50px;
+    }
+    40% {
+        top: -100px;
+    }
+    60% {
+        top: -150px;
+    }
+    80% {
+        top: -200px;
+    }
+}
 
 header:before {
     content: '';
@@ -46,10 +185,11 @@ header .banner-text h1 {
 }
 
 header .banner-text h3 {
-    font: 23px/1.9em 'librebaskerville-regular', serif;
+    font: 36px/1.9em 'librebaskerville-regular', serif;
     color: #A8A8A8;
     color: white;
-    font-weight: bolder;
+    /* color: red; */
+    font-weight: bold;
     margin: 0 auto;
     width: 70%;
     text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -82,19 +222,19 @@ header .social li {
 }
 
 header .social li a {
-    color: #fff;
-}
- 
-header .social li a:hover {
-    color: #2d2fb4bb;
+    color: rgb(255, 255, 255);
 }
 
+header .social li a:hover {
+    color: #2057aa;
+}
 
 #about {
     /* background: #2B2B2B; */
-    background: rgba(128, 128, 128, 0.904);
+    background: rgba(223, 207, 190, 0.466);
     padding-top: 96px;
     padding-bottom: 66px;
+    font: 'librebaskerville-italic', serif;
     overflow: hidden;
 }
 
@@ -108,14 +248,16 @@ header .social li a:hover {
 
 #about h2 {
     font: 22px/30px 'opensans-bold', sans-serif;
-    color: #fff;
+    color: black;
     margin-bottom: 12px;
+    text-decoration: underline;
 }
 
 #about p {
+    /* font-family: "Arial Black", Gadget, sans-serif; */
     line-height: 30px;
-    /* color: #7A7A7A; */
-    color: white;
+    color: black;
+    font-weight: 100;
 }
 
 #about .contact-details {
@@ -160,18 +302,18 @@ header .social li a:hover {
 }
 
 #resume h1 {
-    font: 18px/24px 'opensans-bold', sans-serif;
+    /* font: 18px/24px 'opensans-bold', sans-serif; */
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 #resume h1 span {
-    border-bottom: 3px solid #11ABB0;
-    padding-bottom: 6px;
+    /* border-bottom: 3px solid #010808; */
+    /* padding-bottom: 6px; */
 }
 
 #resume h3 {
-    font: 25px/30px 'opensans-bold', sans-serif;
+    /* font: 25px/30px 'opensans-bold', sans-serif; */
 }
 
 #resume .header-col {
@@ -186,12 +328,12 @@ header .social li a:hover {
 .education, .work {
     margin-bottom: 48px;
     padding-bottom: 24px;
-    border-bottom: 1px solid #E8E8E8;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.452);
 }
 
 #resume .info {
-    font: 16px/24px 'librebaskerville-italic', serif;
-    color: #6E7881;
+    /* font: 16px/24px 'librebaskerville-italic', serif; */
+    /* color: #6E7881; */
     margin-bottom: 18px;
     margin-top: 9px;
 }
