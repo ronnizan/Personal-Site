@@ -14,22 +14,23 @@ header {
     overflow: hidden;
 }
 
-.Iam {
+.animation-wrapper {
     /* padding: 2em 5em; */
-    font: normal 40px/50px Montserrat, sans-serif;
-    color: white;
+    font: normal 35px/50px Montserrat, sans-serif;
+    color: rgba(255, 255, 255, 0.888);
+    font-weight: bolder;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 @media only screen and (max-width: 700px) {
-    .Iam {
+    .animation-wrapper {
         font: normal 23px/50px Montserrat, sans-serif;
     }
 }
 
-.Iam b {
+.animation-wrapper span {
     float: left;
     overflow: hidden;
     position: relative;
@@ -37,7 +38,7 @@ header {
     top: 40px;
 }
 
-.Iam .innerIam {
+.animation-wrapper .inner-animation {
     display: inline-block;
     /* color: #e74c3c; */
     text-align: center;
@@ -257,7 +258,7 @@ header .social li a:hover {
     /* font-family: "Arial Black", Gadget, sans-serif; */
     line-height: 30px;
     color: black;
-    font-weight: 100;
+    font-weight: bolder;
 }
 
 #about .contact-details {
