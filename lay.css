@@ -364,6 +364,13 @@ header .social li a:hover {
     color: #95A3A3;
 }
 
+.github-link{
+    text-decoration: none;
+    color:inherit;
+    font-weight: bolder;
+    color: rgba(0, 0, 0, 0.685);
+}
+
 /* Portfolio Content */
 
 #portfolio-wrapper .columns {
