@@ -19,21 +19,23 @@
 
    <nav id="navigation">
 
+
+      <a href="#home" style="display: none;">Home</a>
       <a href="#about">About</a>
 
       <a href="#resume">Resume</a>
 
       <a href="#portfolio">Portfolio</a>
    </nav>
-   <header id="home">
+   <section class="header" id="home">
 
       <div class="row banner">
-         <div class="banner-text">
+         <div class="banner">
             <h1 class="responsive-headline">I'm Ron Nizan.</h1>
             <div class="animation-wrapper">
                <span>
                   <div class="inner-animation">
-                     Fullstack Web Developer<br />
+                     Full Stack Web Developer<br />
                      Frontend Web Developer<br />
                      Backend Web Developer<br />
                   </div>
@@ -44,7 +46,8 @@
             <br>
             <ul class="social">
 
-               <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+               <li><a href="https://www.linkedin.com/in/ron-nizan/" target="_blank"><i class="fa fa-linkedin"></i></a>
+               </li>
                <li><a href="https://github.com/ronnizan" target="_blank"><i class="fa fa-github"></i></a></li>
                <br><br>
                <li> <i class="fas fa-arrow-circle-down"></i>
@@ -53,7 +56,7 @@
          </div>
       </div>
 
-   </header>
+   </section>
 
 
 
@@ -72,7 +75,7 @@
                I have studied philosophy and political science but have always been interested in web development.
                During my studies I started takeing web development courses online. That and my previous interest in web
                development created a spark to turn my hobby into a career. I took my first steps towards my new career
-               in October 2019 and Finished John Bryce College Fullstack Web Development Course With Excellence.
+               in October 2019 and Finished John Bryce College Full Stack Web Development Course With Excellence.
             </p>
             <br>
             <div class="row">
@@ -92,10 +95,11 @@
 
                <div class="columns download">
                   <p>
-                     <a href="./hi.docx" class="button"><i class="fa fa-download"></i>Download C.V in Hebrew</a>
+                     <a href="./קורות חיים רון ניצן.docx" class="button"><i class="fa fa-download"></i>Download my C.V
+                        in Hebrew</a>
                   </p>
                   <p>
-                     <a href="#" class="button"><i class="fa fa-download"></i>Download C.V in English</a>
+                     <a href="./Ron_Nizan-C.V.docx" class="button"><i class="fa fa-download"></i>Download my C.V in English</a>
                   </p>
                </div>
             </div>
@@ -190,12 +194,12 @@
                <div class="twelve columns">
 
                   <h3>John Bryce College</h3>
-                  <p class="info">Certified Fullstack Web Developer <span>&bull;</span> <em class="date">October 2019 -
+                  <p class="info">Certified Full Stack Web Developer <span>&bull;</span> <em class="date">October 2019 -
                         August 2020</em></p>
 
                   <p>
 
-                     I finished John Bryce College Fullstack Web Development Course With Excellence (average grades of
+                     I finished John Bryce College Full Stack Web Development Course With Excellence (average grades of
                      99).
                   </p>
 
@@ -227,8 +231,9 @@
                projects in which I implemented John Bryce and the online Courses material. In those projects I
                implemented the following topics: Mern stack apps, Mean stack apps, sern stack apps (with sql database),
                AWS deployment, Firebase
-               features(hosting, functions, authentication, firestore), Redux Thunk, Ngrx (Angular Redux), Mapbox,
-               Payment system (braintree, stripe and paypal), Social Logins.
+               features(hosting, Cloud functions, authentication, firestore),Heroku, Azure, Redux Thunk, Ngrx (Angular
+               Redux), Ngrx effects, Mapbox,
+               Payment system (braintree, stripe and paypal), Social Logins , confirmation email with sendgrid.
             </p>
 
 
@@ -246,7 +251,7 @@
          <div class="twelve columns collapsed">
 
             <h1>Check Out Some of My Works, all of them are deployed. More Projects including netflix landing page,
-               coronavirus tracker, hotel reservation website, minesweeper game and more at my <a class="github-link"
+               hotel reservation website, minesweeper game and more at my <a class="github-link"
                   href="https://github.com/ronnizan" target="_blank">Github repository.</a> </h1>
 
             <div id="portfolio-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
@@ -408,11 +413,11 @@
                   <div class="item-wrap">
 
                      <a href="#modal-10" title="">
-                        <img alt="" src="images/portfolio/travel-log1.png">
+                        <img alt="" src="images/portfolio/landing-page2.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-                              <h5>Travel Log</h5>
-                              <p>React app</p>
+                              <h5>Real Estate Landing Page</h5>
+                              <p>Html, Css, Jquery</p>
                            </div>
                         </div>
 
@@ -424,11 +429,11 @@
                   <div class="item-wrap">
 
                      <a href="#modal-11" title="">
-                        <img alt="" src="images/portfolio/travel-log1.png">
+                        <img alt="" src="images/portfolio/cryptonite1.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-                              <h5>Travel Log</h5>
-                              <p>React app</p>
+                              <h5>Cryptocurrency App</h5>
+                              <p>Html, Css, Jquery</p>
                            </div>
                         </div>
 
@@ -440,11 +445,11 @@
                   <div class="item-wrap">
 
                      <a href="#modal-12" title="">
-                        <img alt="" src="images/portfolio/travel-log1.png">
+                        <img alt="" src="images/portfolio/chat-bot1.png">
                         <div class="overlay">
                            <div class="portfolio-item-meta">
-                              <h5>Travel Log</h5>
-                              <p>React app</p>
+                              <h5>Chat-Bot</h5>
+                              <p>MERN Stack App with Dialogflow Chat-Bot</p>
                            </div>
                         </div>
 
@@ -647,7 +652,6 @@
                <p>Fully responsive react app. <br> <strong>main features:</strong>
                   <br> <strong>Frontend: </strong> usage of chart.js for displaying coronavirus statistics, updated
                   daily information on the coronavirus statistics from all over the world.<br>
-
                </p>
 
             </div>
@@ -660,51 +664,66 @@
          </div>
          <div id="modal-10" class="popup-modal mfp-hide">
 
-            <img class="scale-with-grid" src="images/portfolio/travel-log2.png" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/landing-page1.png" alt="" />
 
             <div class="description-box">
-               <h4>Retrocam</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <h4>Real Estate Landing Page</h4>
+               <p>Fully responsive landing page. <br> <strong>main features:</strong>
+                  <br> <strong>Frontend: </strong> Html, Css, Jquery and bootstrap used to create clean copy of a real
+                  site, slick slider is used to swap the images. <br>
+
+               </p>
 
             </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">To the deployed app</a>
+               <a href="https://affectionate-joliot-e22440.netlify.app" target="_blank">To the deployed app</a>
                <a class="popup-modal-dismiss">Close</a>
             </div>
 
          </div>
          <div id="modal-11" class="popup-modal mfp-hide">
 
-            <img class="scale-with-grid" src="images/portfolio/travel-log2.png" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/cryptonite2.png" alt="" />
 
             <div class="description-box">
-               <h4>Retrocam</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
+               <h4>Cryptocurrency App</h4>
+               <p>Fully responsive Jquery app. <br> <strong>main features:</strong>
+                  <br> <strong>Frontend: </strong> Jquery and ajax requests are used to interact with cryptocurrency
+                  API, you can choose to get more information on the coin and compare its value to USD, Euro and
+                  Shekel.. further more you can select up to 5 coins to show on a graph that shows the coin value
+                  compared to the dollar, the graph is updated every two seconds. <br>
+
+               </p>
 
             </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">To the deployed app</a>
+               <a href="https://cryptonite-ron.herokuapp.com" target="_blank">To the deployed app</a>
                <a class="popup-modal-dismiss">Close</a>
             </div>
 
          </div>
          <div id="modal-12" class="popup-modal mfp-hide">
 
-            <img class="scale-with-grid" src="images/portfolio/travel-log2.png" alt="" />
+            <img class="scale-with-grid" src="images/portfolio/chat-bot2.png" alt="" />
 
             <div class="description-box">
-               <h4>Retrocam</h4>
-               <p>Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
-                  elit consequat ipsum, nec sagittis sem nibh id elit.</p>
-
+               <h4>Chat-Bot</h4>
+               <p>Fully responsive Dialogflow Chat-bot MERN stack app. in this app you can ask who is the best
+                  programmer and the chat bot will give you an answer, after that you will be asked if you want to be
+                  contacted, if you replay yes than you will be asked for you name and email, your name and email will
+                  be
+                  saved in a mongodb atlas database.</p>
+               <br> <strong>main features:</strong>
+               <br> <strong>Frontend: </strong> React hooks, react context api to store the chat messages.<br>
+               <strong>Backend: </strong> mongodb and mongoose for saving client data to mongodb atlas database,
+               Dialogflow chat bot.
+               </p>
             </div>
 
             <div class="link-box">
-               <a href="http://www.behance.net" target="_blank">To the deployed app</a>
+               <a href="https://chat-bot-ron.herokuapp.com" target="_blank">To the deployed app</a>
                <a class="popup-modal-dismiss">Close</a>
             </div>
 
@@ -722,11 +741,6 @@
 
    <script type="text/javascript"
       src="https://rawcdn.githack.com/rafaelbotazini/floating-whatsapp/3d18b26d5c7d430a1ab0b664f8ca6b69014aed68/floating-wpp.min.js"></script>
-
-
-
-
-
 
    <script src="magnific-popup.js"></script>
    <script src="main.js"></script>
